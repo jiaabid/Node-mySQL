@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+<div id="wrapper">
+        <nav>
+                <div class="nav-wrapper">
+                  <ul id="nav-mobile" class="center">
+                    <li><a href="#insert" class="modal-trigger">INSERT</a></li>
+                    <li><a href="#" id="mypost">MYPOST</a></li>
+                    <li><a href="#" id="update">UPDATE</a></li>
+                    <li><a href="#" id="delete">DELETE</a></li>
+                  </ul>
+                </div> 
+              </nav>
+
+              <div id="insert" class="modal">
+                    <div class="modal-content">
+                      <form action='#!' id="addpost" method="POST">
+                            <div class="row">
+                                    <div class="input-field col s12">
+                                      <input id="title" type="text" name="title" class="validate">
+                                      <label for="title">Title</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="input-field col s12">
+                                          <input id="body" type="text" name="body" class="validate">
+                                          <label for="body">Body</label>
+                                        </div>
+                                      </div>
+                                      <button type="submit" class="btn">Insert</button>
+                      </form>
+                    </div>
+                  </div>
+
+<div id="allposts">
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>TITLE</th>
+            <th>BODY</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
